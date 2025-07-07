@@ -6,8 +6,9 @@ import static org.junit.Assert.assertEquals;
 public class CalcuateTest {
 @Test
 public void testSum() {
-Calculate calculate = new Calculate();
-int expected = 5;
-assertEquals(expected, calculate.sum(2, 3));
+  Calculate calculate = new Calculate();
+  int expected = 5;
+  assertEquals(expected, calculate.sum(2, 3));
 }
+
 }
