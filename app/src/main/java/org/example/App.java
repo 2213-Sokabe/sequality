@@ -4,11 +4,26 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    int a = 2, b = 3;
+    int sum1 = Calculate.sum(a, b);
+    double avg1 = Calculate.average(a, b);
+    System.out.printf("Sum of %d and %d is %d. Average is %.1f\n", a, b, sum1, avg1);
+    int start = 1, end = 10;
+    int sum2 = Calculate.sum2(start, end);
+    double avg2 = Calculate.average(start, end);
+    System.out.printf("Sum of %d to %d is %d. Average is %.1f.\n", start, end, sum2, avg2);
+
+    int oddSum = Calculate.Sum_odd(start, end);
+    int evenSum = Calculate.Sum_even(start, end);
+    System.out.printf("Sum of odd of %d to %d is %d.\n", start, end, oddSum);
+    System.out.printf("Sum of even of %d to %d is %d.\n", start, end, evenSum);
+
+  }
+
 }
